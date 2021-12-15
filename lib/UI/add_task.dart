@@ -66,7 +66,7 @@ class _AddNewTaskState extends State<AddNewTask> {
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: Color(0xff05bfed))),
-              SizedBox(height: 0,),
+
               Row(
                 children: [
                   Expanded(
@@ -91,6 +91,25 @@ class _AddNewTaskState extends State<AddNewTask> {
                       child: const Icon(Icons.calendar_today,size: 30,color: Colors.white,)),
                 ],
               ),
+              SizedBox(height: 10,),
+              GestureDetector(
+                child: const Text(
+                  'Notifications',
+                  style: TextStyle(
+                    color:  Color(0xff05bfed),
+                    fontSize: 16,
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+              ),
+              const Text(
+                'No notifications if date not set.',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white60,
+                ),
+              ),
+
               SizedBox(height: 100,),
               const Text("Add to List",style: TextStyle(
                   fontSize: 18,

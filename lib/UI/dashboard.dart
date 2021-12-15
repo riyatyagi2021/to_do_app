@@ -39,7 +39,7 @@ class _DashboardState extends State<Dashboard> {
                 onChanged: (String? valuee) {
                   setState(() {
                     chosenValue = valuee!;
-                    icon?Icon(Icons.camera):Container();
+                    icon?Icon(Icons.camera):null;
                   });
                 },
                 value: chosenValue,
@@ -141,12 +141,12 @@ class _DashboardState extends State<Dashboard> {
                     value: "8",
                     child:Row(
                       children: const [
-                        Icon(Icons.playlist_add),
+                        Icon(Icons.playlist_add,color: Colors.white60),
                         SizedBox(width: 20,),
                         Text("New List",style: TextStyle(
                             fontSize:  20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.white),
+                            color: Colors.white60),
                         ),
                       ],
                     ),
